@@ -15,10 +15,11 @@
 <script>
 export default {
   name: "Online",
-  data() {
-    return {
-      online: false
-    };
+  props: ["status"],
+  computed: {
+    online() {
+      return this.status === "online";
+    }
   }
 };
 </script>
@@ -36,18 +37,18 @@ p {
   margin: 0;
   color: #555;
 }
-.light{
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    margin-right: 10px;
+.light {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
 }
-.online .light{
-    background: limegreen;
+.online .light {
+  background: limegreen;
 }
-.offline .light{
-    background: crimson;
+.offline .light {
+  background: crimson;
 }
 </style>
 
