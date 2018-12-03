@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "vue-cli-3": "ninja-custom-vue-cli-3",
+    "default": "ninja-custom-vue-cli-3"
+  }
+}
